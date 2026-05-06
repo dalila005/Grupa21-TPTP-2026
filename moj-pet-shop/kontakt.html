@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šapa & Rep - Pet Shop | Kontakt</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fcfbf8; color: #333; }
+        
+        /* NOVO ZAGLAVLJE S LOGOTIPOM (ISTO KAO NA POČETNOJ) */
+        header { 
+            background-color: #76a5af;
+            color: white; 
+            padding: 15px 30px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: start;
+        }
+        .header-logo {
+            height: 100px;
+            width: auto;
+            margin-right: 25px;
+        }
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 { margin: 0; font-size: 2.5em; text-transform: uppercase; }
+        header p { margin: 5px 0 0; font-size: 1.1em; opacity: 0.9; }
+
+        /* AŽURIRANA NAVIGACIJA */
+        nav { background-color: #1b3e51; padding: 12px; text-align: center; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { color: #e29b6f; }
+        
+        .container { max-width: 900px; margin: 30px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; gap: 30px; flex-wrap: wrap; }
+        .info, .contact-form { flex: 1; min-width: 320px; }
+        .info h2 { color: #1b3e51; margin-top: 0; }
+        
+        /* AŽURIRANA FORMA */
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #76a5af; border-radius: 6px; box-sizing: border-box; }
+        .contact-form label { font-weight: bold; color: #1b3e51; margin-bottom: 5px; display: block;}
+        .contact-form button { background-color: #e29b6f; color: white; border: none; padding: 12px 25px; cursor: pointer; border-radius: 6px; font-weight: bold; width: 100%; font-size: 1.1em; }
+        .contact-form button:hover { background-color: #d18a5e; }
+        
+        footer { text-align: center; padding: 15px; background-color: #1b3e51; color: white; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Šapa & Rep Logo" class="header-logo">
+    <div class="header-text">
+        <h1>🐾 ŠAPA & REP</h1>
+        <p>Vaša omiljena prodavnica za kućne ljubimce</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Početna</a>
+    <a href="proizvodi.html">Proizvodi</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+    <div class="info">
+        <h2>Naše informacije</h2>
+        <p><strong>Adresa:</strong> Glavna ulica 123, 75000 Tuzla</p>
+        <p><strong>Telefon:</strong> +387 61 123 456</p>
+        <p><strong>Email:</strong> info@sapa-rep.ba</p>
+        <p><strong>Radno vrijeme:</strong></p>
+        <ul>
+            <li>Ponedjeljak - Petak: 08:00 - 20:00</li>
+            <li>Subota: 08:00 - 15:00</li>
+            <li>Nedjelja: Zatvoreno</li>
+        </ul>
+    </div>
+    
+    <div class="contact-form">
+        <h2>Pošaljite nam poruku</h2>
+        <form action="#" method="post">
+            <label for="ime">Vaše Ime:</label>
+            <input type="text" id="ime" name="ime" required>
+            
+            <label for="email">Vaš Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="poruka">Poruka:</label>
+            <textarea id="poruka" name="poruka" rows="6" required></textarea>
+            
+            <button type="submit">Pošalji poruku</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Pet Shop Šapa & Rep. Sva prava zadržana.</p>
+</footer>
+
+</body>
+</html>

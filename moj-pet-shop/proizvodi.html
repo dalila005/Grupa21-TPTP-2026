@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šapa & Rep - Pet Shop | Proizvodi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fcfbf8; color: #333; }
+        
+        /* NOVO ZAGLAVLJE S LOGOTIPOM (ISTO KAO NA POČETNOJ) */
+        header { 
+            background-color: #76a5af;
+            color: white; 
+            padding: 15px 30px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: start;
+        }
+        .header-logo {
+            height: 100px;
+            width: auto;
+            margin-right: 25px;
+        }
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 { margin: 0; font-size: 2.5em; text-transform: uppercase; }
+        header p { margin: 5px 0 0; font-size: 1.1em; opacity: 0.9; }
+
+        /* AŽURIRANA NAVIGACIJA */
+        nav { background-color: #1b3e51; padding: 12px; text-align: center; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { color: #e29b6f; }
+        
+        .container { max-width: 900px; margin: 30px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 30px; }
+        
+        /* AŽURIRANE KARTICE PROIZVODA */
+        .product-card { border: 1px solid #76a5af; padding: 20px; text-align: center; border-radius: 10px; background-color: #f7fbfc; transition: transform 0.2s; }
+        .product-card:hover { transform: translateY(-5px); border-color: #1b3e51; }
+        .product-card h3 { color: #1b3e51; margin-top: 0; }
+        .product-card p { font-size: 0.9em; color: #553333; line-height: 1.4; }
+        .product-card strong { color: #e29b6f; /* Boja breskve za cijenu */ font-size: 1.3em; display: block; margin-top: 10px; }
+        
+        footer { text-align: center; padding: 15px; background-color: #1b3e51; color: white; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Šapa & Rep Logo" class="header-logo">
+    <div class="header-text">
+        <h1>🐾 ŠAPA & REP</h1>
+        <p>Vaša omiljena prodavnica za kućne ljubimce</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Početna</a>
+    <a href="proizvodi.html">Proizvodi</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+    <h2>Izdvojeni proizvodi iz naše ponude</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>Hrana za pse</h3>
+            <p>Premium suha i mokra hrana za sve pasmine.</p>
+            <strong>Od 10 KM</strong>
+        </div>
+        <div class="product-card">
+            <h3>Igračke za mačke</h3>
+            <p>Grebalice, miševi i interaktivne igračke.</p>
+            <strong>Od 5 KM</strong>
+        </div>
+        <div class="product-card">
+            <h3>Oprema za akvarijume</h3>
+            <p>Filteri, hrana za ribice i dekoracije.</p>
+            <strong>Od 15 KM</strong>
+        </div>
+        <div class="product-card">
+            <h3>Kavezi za ptice</h3>
+            <p>Prostrani kavezi i dodaci za ptice.</p>
+            <strong>Od 40 KM</strong>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Pet Shop Šapa & Rep. Sva prava zadržana.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šapa & Rep - Pet Shop | Početna</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fcfbf8; color: #333; }
+        
+        /* NOVO ZAGLAVLJE S LOGOTIPOM (FLEXBOX) */
+        header { 
+            background-color: #76a5af; /* Tirkizna iz logotipa */
+            color: white; 
+            padding: 15px 30px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: start; /* Poravnanje na lijevo */
+        }
+        .header-logo {
+            height: 100px; /* Prilagođena visina logotipa */
+            width: auto;
+            margin-right: 25px; /* Razmak između logotipa i teksta */
+        }
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 { margin: 0; font-size: 2.5em; text-transform: uppercase; }
+        header p { margin: 5px 0 0; font-size: 1.1em; opacity: 0.9; }
+
+        /* AŽURIRANA NAVIGACIJA I BOJE */
+        nav { background-color: #1b3e51; /* Tamnoplava iz logotipa */ padding: 12px; text-align: center; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { color: #e29b6f; /* Boja breskve iz logotipa */ }
+        
+        .container { max-width: 900px; margin: 30px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .hero { text-align: center; padding: 50px 0; }
+        .hero h2 { color: #1b3e51; }
+        .hero p { line-height: 1.6; }
+        
+        footer { text-align: center; padding: 15px; background-color: #1b3e51; color: white; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Šapa & Rep Logo" class="header-logo">
+    <div class="header-text">
+        <h1>🐾 ŠAPA & REP</h1>
+        <p>Vaša omiljena prodavnica za kućne ljubimce</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Početna</a>
+    <a href="proizvodi.html">Proizvodi</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <h2>Dobrodošli u naš svijet ljubimaca!</h2>
+        <p>U našem Pet Shopu nudimo najkvalitetniju hranu, igračke i opremu za pse, mačke, ptice i male glodare. Vaš ljubimac zaslužuje samo najbolje, a mi smo tu da vam to omogućimo.</p>
+        <p>Posjetite nas i uvjerite se u naš širok asortiman!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Pet Shop Šapa & Rep. Sva prava zadržana.</p>
+</footer>
+
+</body>
+</html>
