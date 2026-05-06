@@ -15,8 +15,8 @@ Ovaj projekat predstavlja savremenu web prodavnicu kućnih ljubimaca dizajniranu
 - CSS3 (bez frameworka)
 - JavScript (bez biblioteka)
 
-## AI alati koristeni u projektu
-- Claude: objasnjenje CSS Grid sintakse
+## AI alati korišteni u projektu
+- Claude: objašnjenje CSS Grid sintakse
 - ChatGPT: debugiranje JS regex validacije
 
 ## Napomene
