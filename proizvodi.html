@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šapa & Rep - Pet Shop | Proizvodi</title>
+    <link rel="stylesheet" href="css/tptpstil.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Šapa & Rep Logo" class="header-logo">
+    <div class="header-text">
+        <h1>🐾 ŠAPA & REP</h1>
+        <p>Vaša omiljena prodavnica za kućne ljubimce</p>
+    </div>
+    <!-- AI pomoć: toggle dugme za tamni mod -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Prebaci tamni/svjetli mod">🌙</button>
+</header>
+
+<nav>
+    <a href="index.html">Početna</a>
+    <a href="proizvodi.html" class="active">Proizvodi</a>
+    <a href="sadrzaj.html">Sadržaj</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<!-- Sekundarna navigacija / filteri kategorija -->
+<div class="filter-bar">
+    <button class="filter-btn active" data-filter="sve">🐾 Sve</button>
+    <button class="filter-btn" data-filter="pas">🐕 Psi</button>
+    <button class="filter-btn" data-filter="macka">🐱 Mačke</button>
+    <button class="filter-btn" data-filter="riba">🐟 Ribe</button>
+    <button class="filter-btn" data-filter="ptica">🐦 Ptice</button>
+    <button class="filter-btn" data-filter="oprema">🛒 Oprema</button>
+</div>
+
+<main class="container">
+    <div class="products-header">
+        <h2>Naša ponuda proizvoda</h2>
+        <!-- Dinamički brojač vidljivih proizvoda -->
+        <span class="product-count" id="productCount">10 proizvoda</span>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+        <!-- 1 -->
+        <article class="product-card" data-category="pas">
+            <div class="card-badge">Bestseller</div>
+            <div class="card-icon">🦴</div>
+            <h3>Premium hrana za pse</h3>
+            <p>Visokokvalitetna suha i mokra hrana za sve pasmine i uzraste. Bogata proteinima i vitaminima.</p>
+            <strong class="price">Od 10 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 2 -->
+        <article class="product-card" data-category="macka">
+            <div class="card-badge novo">Novo</div>
+            <div class="card-icon">🐭</div>
+            <h3>Igračke za mačke</h3>
+            <p>Grebalice, miševi i interaktivne igračke koje će vaša mačka obožavati. Sigurni materijali.</p>
+            <strong class="price">Od 5 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 3 -->
+        <article class="product-card" data-category="riba">
+            <div class="card-icon">🐠</div>
+            <h3>Oprema za akvarijume</h3>
+            <p>Filteri, pumpe, rasvjeta i hrana za ribice. Sve što trebate za savršen podvodni svijet.</p>
+            <strong class="price">Od 15 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 4 -->
+        <article class="product-card" data-category="ptica">
+            <div class="card-icon">🏠</div>
+            <h3>Kavezi za ptice</h3>
+            <p>Prostrani i udobni kavezi za sve vrste ptica. Izdržljiva konstrukcija sa dodacima.</p>
+            <strong class="price">Od 40 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 5 -->
+        <article class="product-card" data-category="pas">
+            <div class="card-badge akcija">Akcija</div>
+            <div class="card-icon">🎾</div>
+            <h3>Igračke za pse</h3>
+            <p>Lopte, konopci i žvakalice za aktivne pse. Ojačani materijal koji traje dugo.</p>
+            <strong class="price">Od 8 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 6 -->
+        <article class="product-card" data-category="macka">
+            <div class="card-icon">🍖</div>
+            <h3>Hrana za mačke</h3>
+            <p>Premium mokra i suha hrana za odrasle mačke i mačiće. Bez umjetnih boja i konzervansa.</p>
+            <strong class="price">Od 7 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 7 -->
+        <article class="product-card" data-category="oprema">
+            <div class="card-badge novo">Novo</div>
+            <div class="card-icon">🛁</div>
+            <h3>Šampon i njega</h3>
+            <p>Blag šampon i regenerator za sve vrste dlake. Nježna formula za osjetljivu kožu ljubimaca.</p>
+            <strong class="price">Od 12 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 8 -->
+        <article class="product-card" data-category="pas">
+            <div class="card-icon">📿</div>
+            <h3>Povodci i ogrlice</h3>
+            <p>Kvalitetni povodci i ogrlice u raznim bojama i veličinama. Za udobne šetnje s vašim ljubimcem.</p>
+            <strong class="price">Od 9 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 9 -->
+        <article class="product-card" data-category="riba">
+            <div class="card-icon">🌿</div>
+            <h3>Dekoracije za akvarijum</h3>
+            <p>Umjetne biljke, kamenje i ukrasi koji će uljepšati vaš akvarijum i pružiti zaklon ribicama.</p>
+            <strong class="price">Od 6 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+        <!-- 10 -->
+        <article class="product-card" data-category="oprema">
+            <div class="card-badge">Bestseller</div>
+            <div class="card-icon">🏡</div>
+            <h3>Kućice za ljubimce</h3>
+            <p>Ugodne i tople kućice za pse i mačke. Dostupne u više veličina, lako se čiste.</p>
+            <strong class="price">Od 35 KM</strong>
+            <a href="sadrzaj.html" class="card-link">Pogledaj više →</a>
+        </article>
+
+    </div>
+
+    <!-- Poruka kada nema rezultata filtriranja -->
+    <p class="no-results" id="noResults" style="display:none;">Nema proizvoda u ovoj kategoriji.</p>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Pet Shop Šapa & Rep. Sva prava zadržana.</p>
+</footer>
+
+<script src="js/tptpskripte.js"></script>
+</body>
+</html>
