@@ -6,10 +6,10 @@ Ovaj projekat predstavlja savremenu web prodavnicu kućnih ljubimaca dizajniranu
 ## Članovi grupe
 | Ime i prezime | GitHub | Zaduženje |
 |---|---|---|
-| Rijad Softić       | @rijad.softic      | JavaScript       |
+|  Rijad Softić      | @rijad.softic      | JavaScript       |
 |  Rijad Mehmedović  | @rijad.mehmedovic  | HTML + struktura |
 |  Dalila Mehmedović | @dalila.mehmedovic | CSS + dizajn     |
-| Rijad Softić       | @rijad.softic      | Druga stranica - Sadržaj |
+|  Rijad Softić      | @rijad.softic      | Druga stranica - Sadržaj |
 |  Rijad Mehmedović  | @rijad.mehmedovic  | Prva stranica- Index |
 |  Dalila Mehmedović | @dalila.mehmedovic | Treća stranica - Kontakt |
 
@@ -23,7 +23,7 @@ Ovaj projekat predstavlja savremenu web prodavnicu kućnih ljubimaca dizajniranu
 - ChatGPT: debugiranje JS regex validacije
 
 ## Napomene
-Sve korištene slike preuzete su sa unsplash.com (besplatne licence).
+Logo kreiran pomoću ChatGPT
   
 
 
