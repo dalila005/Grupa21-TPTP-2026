@@ -6,9 +6,6 @@ Ovaj projekat predstavlja savremenu web prodavnicu kućnih ljubimaca dizajniranu
 ## Članovi grupe
 | Ime i prezime | GitHub | Zaduženje |
 |---|---|---|
-|  Rijad Softić      | @rijad.softic      | JavaScript       |
-|  Rijad Mehmedović  | @rijad.mehmedovic  | HTML + struktura |
-|  Dalila Mehmedović | @dalila.mehmedovic | CSS + dizajn     |
 |  Rijad Softić      | @rijad.softic      | Druga stranica - Sadržaj |
 |  Rijad Mehmedović  | @rijad.mehmedovic  | Prva stranica- Index |
 |  Dalila Mehmedović | @dalila.mehmedovic | Treća stranica - Kontakt |
