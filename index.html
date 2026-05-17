@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Šapa & Rep - Pet Shop | Početna</title>
+  <link rel="stylesheet" href="tptpstil.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <header>
+    <picture>
+      <source srcset="images/Gemini_Generated_Image_9xp5rw9xp5rw9xp5-removebg-preview.png" type="image/webp">
+      <img src="images/Gemini_Generated_Image_9xp5rw9xp5rw9xp5-removebg-preview.png"
+        alt="Šapa i Rep logo — šapa kućnog ljubimca" class="header-logo">
+    </picture>
+    <div class="header-text">
+      <h1>🐾 ŠAPA & REP</h1>
+      <p>Vaša omiljena prodavnica za kućne ljubimce</p>
+    </div>
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Prebaci tamni/svjetli mod">🌙</button>
+  </header>
+
+  <!-- ═══════════════════════════ TROSTUPNI LAYOUT ═══════════════════════════ -->
+  <div class="page-wrapper">
+
+    <!-- ─────────────── LIJEVA NAVIGACIJA ─────────────── -->
+    <nav class="side-nav" aria-label="Glavna navigacija">
+      <span class="nav-label">Stranice</span>
+      <a href="index.html" class="active">🏠 Početna</a>
+      <a href="Sadržaj.html">📦 Sadržaj</a>
+      <a href="kontakt.html">📬 Kontakt</a>
+      <span class="nav-label">Sekcije</span>
+      <a href="#dobrodosli">👋 Dobrodošli</a>
+      <a href="#kategorije-home">📋 Kategorije</a>
+      <a href="#izdvojeno">🛒 Izdvojeno</a>
+      <a href="#prednosti">⭐ Prednosti</a>
+      <div class="nav-github">
+        <a href="https://github.com/dalila005/Grupa21-TPTP-2026" target="_blank" rel="noopener">🔗 GitHub ↗</a>
+      </div>
+    </nav>
+
+    <!-- ─────────────── GLAVNI SADRŽAJ ─────────────── -->
+    <main class="main-content" id="top">
+
+      <!-- Bookmark navigacija -->
+      <div class="bookmark-nav">
+        <span>Skoči na:</span>
+        <a href="#dobrodosli">👋 Dobrodošli</a>
+        <a href="#kategorije-home">📋 Kategorije</a>
+        <a href="#izdvojeno">🛒 Izdvojeno</a>
+        <a href="#prednosti">⭐ Prednosti</a>
+        <a href="#radno-vrijeme">🕐 Radno</a>
+        <a href="#newsletter">📧 Newsletter</a>
+      </div>
+
+      <!-- ── SEKCIJA 1: DOBRODOŠLI ── -->
+      <section id="dobrodosli">
+        <div class="welcome-wrap">
+          <div class="welcome-text">
+            <h2>Dobrodošli u naš svijet ljubimaca!</h2>
+            <p>
+              U našem Pet Shopu nudimo najkvalitetniju hranu, igračke i opremu za pse, mačke,
+              ptice i male glodare. Vaš ljubimac zaslužuje samo najbolje, a mi smo tu da vam
+              to omogućimo.
+            </p>
+            <p>
+              Posjetite nas i uvjerite se u naš širok asortiman. Stručni tim je uvijek
+              spreman da vam pomogne u odabiru pravog proizvoda.
+            </p>
+            <a href="Sadržaj.html" class="btn btn-primary">Pogledaj ponudu →</a>
+          </div>
+          <div class="welcome-img-wrap">
+            <img src="images/shutterstock2482316883-670x447.png" alt="Pas i mačka zajedno u prodavnici Šapa i Rep"
+              class="welcome-img">
+          </div>
+        </div>
+        <a href="#top" class="back-to-top">↑ Skoči na vrh</a>
+      </section>
+
+      <!-- ── SEKCIJA 2: KATEGORIJE ── -->
+      <section id="kategorije-home">
+        <h2>Ponuda za sve vrste ljubimaca</h2>
+        <div class="home-categories">
+          <a href="Sadržaj.html" class="cat-box" data-category="pas">
+            <span class="cat-icon">🐕</span>
+            <span class="cat-label">Psi</span>
+            <span class="cat-desc">Hrana, igračke, povodci</span>
+          </a>
+          <a href="Sadržaj.html" class="cat-box" data-category="macka">
+            <span class="cat-icon">🐱</span>
+            <span class="cat-label">Mačke</span>
+            <span class="cat-desc">Hrana, grebalice, pijesak</span>
+          </a>
+          <a href="Sadržaj.html" class="cat-box" data-category="ptica">
+            <span class="cat-icon">🦜</span>
+            <span class="cat-label">Ptice</span>
+            <span class="cat-desc">Kavezi, hrana, dodaci</span>
+          </a>
+          <a href="Sadržaj.html" class="cat-box" data-category="riba">
+            <span class="cat-icon">🐟</span>
+            <span class="cat-label">Ribe</span>
+            <span class="cat-desc">Akvarijumi, filteri, hrana</span>
+          </a>
+          <a href="Sadržaj.html" class="cat-box" data-category="oprema">
+            <span class="cat-icon">🛒</span>
+            <span class="cat-label">Oprema i njega</span>
+            <span class="cat-desc">Šamponi, kućice, torbe</span>
+          </a>
+        </div>
+        <a href="#top" class="back-to-top">↑ Skoči na vrh</a>
+      </section>
+
+      <!-- ── SEKCIJA 3: IZDVOJENO ── -->
+      <section id="izdvojeno">
+        <div class="products-header">
+          <h2>Izdvojeno iz ponude</h2>
+          <span class="product-count" id="productCount">3 proizvoda</span>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <article class="product-card" data-category="pas">
+            <img src="images/550.png" alt="Premium suha hrana za pse u vrećici 15 kg" class="card-img">
+            <div class="card-badge">Bestseller</div>
+            <div class="card-icon">🦴</div>
+            <h3>Premium hrana za pse 15 kg</h3>
+            <p>Visokokvalitetna suha hrana bogata proteinima i vitaminima za sve pasmine i uzraste.</p>
+            <strong class="price">120 KM</strong>
+            <a href="kontakt.html" class="card-link">Naruči →</a>
+          </article>
+
+          <article class="product-card" data-category="macka">
+            <img src="images/8718475522782_a_en_hd_1__31127.png" alt="Drvena grebalica za mačke sa više nivoa"
+              class="card-img">
+            <div class="card-badge novo">Novo</div>
+            <div class="card-icon">🐭</div>
+            <h3>Grebalica za mačke — drvo</h3>
+            <p>Stabilna drvena grebalica sa sisal konopcem i mekanom platformom za odmor.</p>
+            <strong class="price">85 KM</strong>
+            <a href="kontakt.html" class="card-link">Naruči →</a>
+          </article>
+
+          <article class="product-card" data-category="macka">
+            <img src="images/TAMkzUjmKxtn.png" alt="Interaktivna igračka miš na navijanje za mačke" class="card-img">
+            <div class="card-badge akcija">Akcija</div>
+            <div class="card-icon">🎀</div>
+            <h3>Igračka mišić na navijanje</h3>
+            <p>Simpatična igračka koja se kreće i drži mačku aktivnom. Sigurni materijali bez BPA.</p>
+            <strong class="price">12 KM</strong>
+            <a href="kontakt.html" class="card-link">Naruči →</a>
+          </article>
+
+        </div>
+
+        <p class="no-results" id="noResults" style="display:none;">
+          Nema proizvoda u ovoj kategoriji.
+        </p>
+
+        <div class="view-all-wrap">
+          <a href="Sadržaj.html" class="btn btn-outline">Pogledaj cijeli asortiman →</a>
+        </div>
+        <a href="#top" class="back-to-top">↑ Skoči na vrh</a>
+      </section>
+
+      <!-- ── SEKCIJA 4: PREDNOSTI ── -->
+      <section id="prednosti">
+        <h2>Zašto kupovati kod nas?</h2>
+        <div class="features-wrap">
+          <div class="feature-box">
+            <div class="feature-icon">🚀</div>
+            <h3>Brza dostava</h3>
+            <p>Besplatna dostava za sve narudžbe preko 50 KM. Isporuka u roku od 24 sata u cijeloj BiH.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">⭐</div>
+            <h3>Vrhunski kvalitet</h3>
+            <p>Surađujemo samo sa provjerenim i certificiranim brendovima kojima možete vjerovati.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">❤️</div>
+            <h3>Ljubav prema životinjama</h3>
+            <p>Naš stručni tim je uvijek na raspolaganju za savjete i pomoć pri odabiru proizvoda.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon">💰</div>
+            <h3>Povoljne cijene</h3>
+            <p>Redovne akcije, popusti za vjerne kupce i sezonske rasprodaje tokom cijele godine.</p>
+          </div>
+        </div>
+        <a href="#top" class="back-to-top">↑ Skoči na vrh</a>
+      </section>
+
+      <!-- ── SEKCIJA 5: RADNO VRIJEME ── -->
+      <section id="radno-vrijeme">
+        <h2>Radno vrijeme</h2>
+        <div class="hours-wrap">
+          <div class="hours-card">
+            <div class="status-row">
+              <span class="status-dot closed" id="statusDot"></span>
+              <span class="status-text" id="statusText">Provjera statusa...</span>
+            </div>
+            <table class="hours-table">
+              <thead>
+                <tr>
+                  <th>Dan</th>
+                  <th>Sati</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ponedjeljak – Petak</td>
+                  <td>09:00 – 20:00</td>
+                </tr>
+                <tr>
+                  <td>Subota</td>
+                  <td>09:00 – 17:00</td>
+                </tr>
+                <tr>
+                  <td>Nedjelja</td>
+                  <td>10:00 – 15:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="hours-info">
+            <div class="info-icon-box">
+              <span>📍</span>
+              <div>
+                <strong>Adresa</strong>
+                <address>Ulica Kućnih Ljubimaca 12,<br>71000 Sarajevo, BiH</address>
+              </div>
+            </div>
+            <div class="info-icon-box">
+              <span>📞</span>
+              <div>
+                <strong>Telefon</strong>
+                <p><a href="tel:+38733123456">+387 33 123-456</a></p>
+              </div>
+            </div>
+            <div class="info-icon-box">
+              <span>✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:info@sapairep.ba">info@sapairep.ba</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#top" class="back-to-top">↑ Skoči na vrh</a>
+      </section>
+
+      <!-- ── SEKCIJA 6: NEWSLETTER ── -->
+      <section id="newsletter">
+        <div class="newsletter-wrap">
+          <div class="newsletter-text">
+            <h2>📧 Prijavite se na Newsletter</h2>
+            <p>Ostavite svoj email i ostvarite <strong>10% popusta</strong> na prvu kupovinu!
+              Budite prvi koji sazna za akcije i novi asortiman.</p>
+          </div>
+          <div class="newsletter-form-wrap" id="newsletterFormWrap">
+            <div class="newsletter-form">
+              <input type="email" id="newsletterEmail" placeholder="Vaša email adresa"
+                aria-label="Unesite email za prijavu na newsletter">
+              <button class="btn btn-primary" id="newsletterBtn">Prijavi me</button>
+            </div>
+            <p class="field-error" id="newsletterError"></p>
+          </div>
+          <p class="newsletter-success" id="newsletterSuccess" style="display:none;">
+            ✅ Uspješno ste se prijavili! Provjerite email za kupon.
+          </p>
+        </div>
+        <a href="#top" class="back-to-top">↑ Skoči na vrh</a>
+      </section>
+
+    </main>
+
+    <!-- ─────────────── DESNI ASIDE ─────────────── -->
+    <aside aria-label="Bočni panel">
+
+      <!-- Status widget -->
+      <div class="aside-widget">
+        <h3>🕐 Radno vrijeme</h3>
+        <ul class="aside-hours-list">
+          <li><span class="dan">Pon – Pet</span><span>09–20h</span></li>
+          <li><span class="dan">Subota</span><span>09–17h</span></li>
+          <li><span class="dan">Nedjelja</span><span>10–15h</span></li>
+        </ul>
+      </div>
+
+      <!-- Kontakt widget -->
+      <div class="aside-widget">
+        <h3>📍 Kontakt</h3>
+        <div class="aside-contact-item">
+          <span>🗺️</span>
+          <address>Ulica Jalska 12,<br>75000 Tuzla, BiH</address>
+        </div>
+        <div class="aside-contact-item">
+          <span>📞</span>
+          <a href="tel:+38733123456">+387 35 123-456</a>
+        </div>
+        <div class="aside-contact-item">
+          <span>✉️</span>
+          <a href="mailto:info@sapairep.ba">info@sapairep.ba</a>
+        </div>
+      </div>
+
+      <!-- Quick nav widget -->
+      <div class="aside-widget">
+        <h3>🔗 Brzi linkovi</h3>
+        <ul class="aside-quicknav">
+          <li><a href="#dobrodosli">👋 Dobrodošli</a></li>
+          <li><a href="#kategorije-home">📋 Kategorije</a></li>
+          <li><a href="#izdvojeno">🛒 Izdvojeno</a></li>
+          <li><a href="#prednosti">⭐ Prednosti</a></li>
+          <li><a href="#radno-vrijeme">🕐 Radno vrijeme</a></li>
+          <li><a href="#newsletter">📧 Newsletter</a></li>
+        </ul>
+      </div>
+
+      <!-- Mini newsletter -->
+      <div class="aside-widget aside-newsletter">
+        <h3>📧 Newsletter</h3>
+        <p style="font-size:0.82em; color:var(--boja-tekst-slabi); margin-bottom:10px;">
+          10% popusta na prvu kupovinu!
+        </p>
+        <input type="email" placeholder="Vaš email..." aria-label="Email za newsletter">
+        <a href="#newsletter" class="btn btn-primary">Prijavi se</a>
+      </div>
+
+    </aside>
+
+  </div><!-- /page-wrapper -->
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p>&copy; 2026 Pet Shop Šapa & Rep. Sva prava zadržana.</p>
+      </div>
+      <div class="footer-authors">
+        <p>Autori: Dalila Mehmedović | Rijad Mehmedović | Rijad Softić</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📸 Instagram</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">📘 Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
