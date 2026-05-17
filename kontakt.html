@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šapa & Rep - Pet Shop | Početna</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+<header>
+    <picture>
+        <source srcset="Gemini_Generated_Image_9xp5rw9xp5rw9xp5-removebg-preview.png" type="image/webp">
+        <img src="Gemini_Generated_Image_9xp5rw9xp5rw9xp5-removebg-preview.png" alt="Šapa i Rep logo — šapa kućnog ljubimca" class="header-logo">
+    </picture>
+    <div class="header-text">
+        <h1>🐾 ŠAPA & REP</h1>
+        <p>Vaša omiljena prodavnica za kućne ljubimce</p>
+    </div>
+    <button id="dark-mode-toggle" class="btn-toogle" aria-label="Prebaci tamni/svjetli mod">🌙</button>
+</header>
+
+<!-- ═══════════════════════════ TROSTUPNI LAYOUT ═══════════════════════════ -->
+<div class="page-wrapper">
+
+    <!-- ─────────────── LIJEVA NAVIGACIJA ─────────────── -->
+    <nav class="side-nav" aria-label="Glavna navigacija">
+        <span class="nav-label">Stranice</span>
+        <a href="index.html">🏠 Početna</a>
+        <a href="Sadržaj.html">📦 Sadržaj</a>
+        <a href="kontakt.html" class="active">📬 Kontakt</a>
+        <span class="nav-label">Sekcije</span>
+        <a href="#dobrodosli">👋 Dobrodošli</a>
+        <a href="#kategorije-home">📋 Kategorije</a>
+        <a href="#izdvojeno">🛒 Izdvojeno</a>
+        <a href="#prednosti">⭐ Prednosti</a>
+        <a href="#radno-vrijeme">🕐 Radno vrijeme</a>
+        <a href="#newsletter">📧 Newsletter</a>
+        <div class="nav-github">
+            <a href="https://github.com/dalila005/Grupa21-TPTP-2026" target="_blank" rel="noopener">🔗 GitHub ↗</a>
+        </div>
+    </nav>
+
+    <!-- ─────────────── GLAVNI SADRŽAJ ─────────────── -->
+    <main class="main-content" id="top">
+       <section id="kontakt-forma-sekcija">
+<h2>Kontaktirajte nas</h2>
+<p>Imate pitanje ili želite podijeliti utiske s nama? Pišite nam putem forme ispod.</p>
+
+<form action="#" method="POST" class="kontakt-forma" id="formaKontakt" novalidate>
+
+<div class="form-group">
+<label for="ime">Ime i Prezime *</label>
+<input type="text" id="ime" name="ime" placeholder="Npr. Mujo Mujo">
+<span class="error-text" id="error-ime"></span>
+</div>
+
+<div class="form-group">
+<label for="email">E-mail adresa *</label>
+<input type="email" id="email" name="email" placeholder="ime@domena.com">
+<span class="error-text" id="error-email"></span>
+</div>
+
+<div class="form-group">
+<label for="telefon">Broj telefona *</label>
+<input type="text" id="telefon" name="telefon" placeholder="06X-XXX-XXX">
+<small class="napomena">Format: 061-123-456</small>
+<span class="error-text" id="error-telefon"></span>
+</div>
+
+<div class="form-group">
+<label for="razlog">Tema upita *</label>
+<select id="razlog" name="razlog">
+<option value="">-- Odaberite opciju --</option>
+<option value="upit">Opšti upit / Pitanje</option>
+<option value="pohvala">Pohvala</option>
+<option value="reklamacija">Reklamacija</option>
+</select>
+<span class="error-text" id="error-razlog"></span>
+</div>
+
+<div class="form-group">
+<label for="poruka">Vaša poruka *</label>
+<textarea id="poruka" name="poruka" rows="6" placeholder="Napišite vaše pitanje..."></textarea>
+<span class="error-text" id="error-poruka"></span>
+</div>
+
+<div class="form-group checkbox-group" style="margin-top: 10px;">
+<label>
+<input type="checkbox" name="uslovi" id="uslovi">
+Prihvatam uslove korištenja i politiku privatnosti. *
+</label>
+<span class="error-text" id="error-uslovi"></span>
+</div>
+
+<div class="form-buttons" style="display: flex; gap: 10px; margin-top: var(--razmak-srednji);">
+<button type="submit" class="btn btn-primary">Pošalji poruku 🚀</button>
+<button type="reset" class="btn btn-reset" style="background: transparent; border: 1px solid var(--boja-border); color: var(--boja-tekst);">Poništi</button>
+</div>
+
+</form>
+</section>
+
+        </main>
+
+    <!-- ─────────────── DESNI ASIDE ─────────────── -->
+    <aside aria-label="Bočni panel">
+
+        <!-- Status widget -->
+        <div class="aside-widget">
+            <h3>🕐 Status</h3>
+            <div class="aside-status">
+                <span class="status-dot closed" id="asideStatusDot"></span>
+                <span class="status-text" id="asideStatusText">Provjera...</span>
+            </div>
+            <ul class="aside-hours-list">
+                <li><span class="dan">Pon – Pet</span><span>09–20h</span></li>
+                <li><span class="dan">Subota</span><span>09–17h</span></li>
+                <li><span class="dan">Nedjelja</span><span>10–15h</span></li>
+            </ul>
+        </div>
+
+        <!-- Kontakt widget -->
+        <div class="aside-widget">
+            <h3>📍 Kontakt</h3>
+            <div class="aside-contact-item">
+                <span>🗺️</span>
+                <address>Ulica Jalska 12,<br>75000 Tuzla, BiH</address>
+            </div>
+            <div class="aside-contact-item">
+                <span>📞</span>
+                <a href="tel:+38733123456">+387 35 123-456</a>
+            </div>
+            <div class="aside-contact-item">
+                <span>✉️</span>
+                <a href="mailto:info@sapairep.ba">info@sapairep.ba</a>
+            </div>
+        </div>
+
+        <!-- Quick nav widget -->
+        <div class="aside-widget">
+            <h3>🔗 Brzi linkovi</h3>
+            <ul class="aside-quicknav">
+                <li><a href="#dobrodosli">👋 Dobrodošli</a></li>
+                <li><a href="#kategorije-home">📋 Kategorije</a></li>
+                <li><a href="#izdvojeno">🛒 Izdvojeno</a></li>
+                <li><a href="#prednosti">⭐ Prednosti</a></li>
+                <li><a href="#radno-vrijeme">🕐 Radno vrijeme</a></li>
+                <li><a href="#newsletter">📧 Newsletter</a></li>
+            </ul>
+        </div>
+
+        <!-- Mini newsletter -->
+        <div class="aside-widget aside-newsletter">
+            <h3>📧 Newsletter</h3>
+            <p style="font-size:0.82em; color:var(--boja-tekst-slabi); margin-bottom:10px;">
+                10% popusta na prvu kupovinu!
+            </p>
+            <input type="email" placeholder="Vaš email..." aria-label="Email za newsletter">
+            <a href="#newsletter" class="btn btn-primary">Prijavi se</a>
+        </div>
+
+    </aside>
+
+</div><!-- /page-wrapper -->
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <p>&copy; 2026 Pet Shop Šapa & Rep. Sva prava zadržana.</p>
+        </div>
+        <div class="footer-authors">
+            <p>Autori: Dalila Mehmedović | Rijad Mehmedović | Rijad Softić</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📸 Instagram</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">📘 Facebook</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    /* Sinkronizacija aside status dota sa glavnim JS-om */
+    document.addEventListener('DOMContentLoaded', () => {
+        const asideDot  = document.getElementById('asideStatusDot');
+        const asideText = document.getElementById('asideStatusText');
+        const mainDot   = document.getElementById('statusDot');
+        const mainText  = document.getElementById('statusText');
+
+        /* Čeka kratko da index.js postavi klase */
+        setTimeout(() => {
+            if (mainDot && asideDot) {
+                asideDot.className  = mainDot.className;
+                asideText.textContent = mainText ? mainText.textContent : '';
+            }
+        }, 100);
+    });
+</script>
+</body>
+</html>
+
