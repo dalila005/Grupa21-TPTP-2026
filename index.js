@@ -53,57 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // ============================================================
-    // 2. DINAMIČKI STATUS "OTVORENO/ZATVORENO"
-    //    Interaktivna statistika — obavezni zahtjev (PDF §4.3)
-    // ============================================================
-
-    // AI pomoć: Claude mi je objasnio JavaScript Date objekt.
-    // Razumijem da: new Date() kreira objekt sa trenutnim datumom i vremenom.
-    // getDay() vraća broj dana u tjednu: 0 = nedjelja, 1 = ponedeljak, ..., 6 = subota.
-    // getHours() vraća cijeli broj sata u lokalnom vremenu (0-23).
-    // getMinutes() vraća minute (0-59).
-    // Decimalni sat (sat + minute/60) omogućava precizno poređenje s radnim vremenom.
-
-    function provjeriStatus() {
-        var statusDot  = document.getElementById('statusDot');
-        var statusText = document.getElementById('statusText');
-        if (!statusDot || !statusText) return;
-
-        var now        = new Date();
-        var dan        = now.getDay();         // 0 = nedjelja, 1 = pon, ..., 6 = sub
-        var sat        = now.getHours();
-        var minut      = now.getMinutes();
-        var vrijemeDec = sat + minut / 60;    // decimalni sat npr. 09:30 = 9.5
-        var otvoreno   = false;
-
-        if (dan >= 1 && dan <= 5) {
-            // Ponedjeljak – Petak: 09:00 – 20:00
-            otvoreno = (vrijemeDec >= 9 && vrijemeDec < 20);
-        } else if (dan === 6) {
-            // Subota: 09:00 – 17:00
-            otvoreno = (vrijemeDec >= 9 && vrijemeDec < 17);
-        } else {
-            // Nedjelja: 10:00 – 15:00
-            otvoreno = (vrijemeDec >= 10 && vrijemeDec < 15);
-        }
-
-        if (otvoreno) {
-            statusDot.className    = 'status-dot open';
-            statusText.textContent = '✅ Sada smo otvoreni';
-            statusText.style.color = 'var(--boja-uspjeh)';
-        } else {
-            statusDot.className    = 'status-dot closed';
-            statusText.textContent = '🔴 Trenutno zatvoreni';
-            statusText.style.color = 'var(--boja-greska)';
-        }
-    }
-
-    // Pozovi odmah, pa osvježi svake minute (60000 ms)
-    provjeriStatus();
-    setInterval(provjeriStatus, 60000);
-
-
-    // ============================================================
     // 3. SMOOTH SCROLL ZA BOOKMARK NAVIGACIJU
     //    Obavezni zahtjev (PDF §4.3)
     // ============================================================

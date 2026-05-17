@@ -136,57 +136,6 @@ document.addEventListener('DOMContentLoaded', function () {
         azurirajBrojac(ukupnoKartica);
     }
 
-
-    // ============================================================
-    // 4. STATUS "OTVORENO/ZATVORENO" — dinamički / timer element
-    //    Obavezni zahtjev: interaktivna statistika (PDF §4.3)
-    // ============================================================
-
-    // AI pomoć: Claude mi je objasnio JavaScript Date objekt.
-    // Razumijem da: new Date() kreira objekt sa trenutnim datumom i vremenom.
-    // getDay() vraća broj dana u tjednu: 0 = nedjelja, 1 = ponedeljak, ..., 6 = subota.
-    // getHours() vraća cijeli broj sata u lokalnom vremenu (0-23).
-    // getMinutes() vraća minute (0-59).
-
-    function provjeriStatus() {
-        var statusDot  = document.querySelector('.status-dot');
-        var statusText = document.getElementById('statusText');
-        if (!statusDot || !statusText) return;
-
-        var now         = new Date();
-        var dan         = now.getDay();          // 0=ned, 1=pon, ..., 6=sub
-        var sat         = now.getHours();
-        var minut       = now.getMinutes();
-        var vrijemeDec  = sat + minut / 60;      // decimalni sat za poređenje
-        var otvoreno    = false;
-
-        if (dan >= 1 && dan <= 5) {
-            // Pon–Pet: 09:00–20:00
-            otvoreno = (vrijemeDec >= 9 && vrijemeDec < 20);
-        } else if (dan === 6) {
-            // Subota: 09:00–17:00
-            otvoreno = (vrijemeDec >= 9 && vrijemeDec < 17);
-        } else {
-            // Nedjelja: 10:00–15:00
-            otvoreno = (vrijemeDec >= 10 && vrijemeDec < 15);
-        }
-
-        if (otvoreno) {
-            statusDot.className    = 'status-dot open';
-            statusText.textContent = 'Sada smo otvoreni';
-            statusText.style.color = '#4caf7d';
-        } else {
-            statusDot.className    = 'status-dot closed';
-            statusText.textContent = 'Trenutno zatvoreni';
-            statusText.style.color = '#e05b5b';
-        }
-    }
-
-    provjeriStatus();
-    // Osvježi svake minute
-    setInterval(provjeriStatus, 60000);
-
-
     // ============================================================
     // 5. SMOOTH SCROLL ZA BOOKMARK NAVIGACIJU
     //    Obavezni zahtjev (PDF §4.3)
